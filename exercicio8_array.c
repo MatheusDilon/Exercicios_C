@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <locale.h>
 
-int main(){
+int main(void){
     int vetor[6] = {0}, inverso[6] = {0}, tamanho;
     printf("Digite 6 valores inteiros:\n");
     tamanho = sizeof(vetor)/sizeof(vetor[0]);

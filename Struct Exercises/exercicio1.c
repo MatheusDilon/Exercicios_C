@@ -15,7 +15,8 @@ int main(){
     setlocale(LC_ALL, "");
     Pessoa pessoa1;
     printf("Digite seu nome:\n");
-    scanf("%s", &pessoa1.nome);
+    fgets(pessoa1.nome, 15, stdin);
+    pessoa1.nome[strlen(pessoa1.nome) - 1] = '\0';
     printf("Digite sua idade:\n");
     scanf("%d", &pessoa1.idade);
     getchar();
